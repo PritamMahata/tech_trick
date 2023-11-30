@@ -1,0 +1,4 @@
+open cmd 
+and type :-
+rd /s "\\?\'___'
+write the directory name in '____' with out ' '

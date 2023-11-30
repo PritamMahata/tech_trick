@@ -1,0 +1,10 @@
+// rename all file extention
+@ECHO OFF
+PUSHD .
+FOR /R %%d IN (.) DO (
+cd "%%d"
+IF EXIST *.old-extension (
+REN *.old-extension *.new-extension
+)
+)
+POPD

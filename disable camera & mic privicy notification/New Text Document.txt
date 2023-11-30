@@ -1,0 +1,17 @@
+adb shell cmd device_config put privacy camera_mic_icons_enabled false default
+
+And to disable location usage indicators (if you still have them visible for some reason) use this command:
+
+Code:
+adb shell cmd device_config put privacy location_indicators_enabled false default
+
+
+
+
+
+* To re-enable, replace "false" with "true".
+
+The following command will add a "Status bar location indicator" switch at the end of Developer options:
+
+Code:
+adb shell cmd device_config put privacy location_indicator_settings_enabled true default 
